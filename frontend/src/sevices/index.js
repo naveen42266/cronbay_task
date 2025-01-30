@@ -2,8 +2,8 @@ import axios from 'axios';
 
 // Set up base URL and Axios instance
 const api = axios.create({
-//    baseURL: 'https://active-buildings.onrender.com/api/inventory',
-  baseURL: 'http://localhost:8080/api/bidding', // replace with your backend API URL
+   baseURL: 'https://cronbay-task.onrender.com/api/bidding',
+  // baseURL: 'http://localhost:8080/api/bidding', // replace with your backend API URL
   headers: {
     'Content-Type': 'application/json',
   },

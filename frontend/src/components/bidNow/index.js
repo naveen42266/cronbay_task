@@ -23,6 +23,7 @@ const BidNowComponent = () => {
         try {
             const response = await getAllBidding();
             setBiddingData(response || []); // Ensure biddingData is always an array
+            toast.success("Bid fetched successfully!"); // Display failure toast
         } catch (error) {
             toast.error("Error fetching bidding data!"); // Display failure toast
             console.error("Error fetching bidding data:", error);
